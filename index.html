@@ -14,9 +14,7 @@
       --text-secondary: #8B949E;
       --accent: #58A6FF;
       --highlight: #79C0FF;
-      --as:var(--accent);
-    } 
-
+    }
 
     * {
       box-sizing: border-box;
@@ -41,7 +39,6 @@
       margin: 0;
       color: var(--accent);
       font-size: 1.3rem;
-      letter-spacing: 1px;
     }
 
     header {
@@ -49,7 +46,6 @@
       max-width: 800px;
       margin: auto;
       text-align: center;
-      animation: fadeIn 1.5s ease;
     }
 
     header h1 {
@@ -86,7 +82,6 @@
       padding: 3rem 2rem;
       max-width: 800px;
       margin: auto;
-      animation: fadeUp 1s ease;
     }
 
     section:nth-of-type(odd) {
@@ -118,6 +113,23 @@
       margin-bottom: 1rem;
     }
 
+    .download-resume {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--accent);
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-resume:hover {
+      background-color: var(--highlight);
+      color: black;
+    }
+
     .project {
       margin-bottom: 3rem;
       border-left: 4px solid var(--accent);
@@ -126,7 +138,6 @@
 
     .project h3 {
       font-size: 1.3rem;
-      margin-bottom: 0.5rem;
       color: var(--highlight);
     }
 
@@ -137,7 +148,7 @@
 
     .video-embed {
       margin-top: 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     iframe {
@@ -147,31 +158,21 @@
       border-radius: 8px;
     }
 
-    .project a {
+    .try-button {
       display: inline-block;
-      margin-right: 1rem;
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .project a:hover {
-      text-decoration: underline;
-    }
-
-    .download-resume {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.6rem 1.2rem;
+      margin-top: 0.8rem;
+      padding: 0.5rem 1rem;
       background-color: var(--accent);
-      color: var(--bg-main);
-      border-radius: 8px;
-      font-weight: bold;
+      color: white;
+      font-weight: 600;
+      border-radius: 6px;
       text-decoration: none;
       transition: background-color 0.3s ease;
     }
 
-    .download-resume:hover {
+    .try-button:hover {
       background-color: var(--highlight);
+      color: black;
     }
 
     footer {
@@ -183,28 +184,6 @@
 
     a {
       color: var(--accent);
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 600px) {
-      nav h1 {
-        font-size: 1rem;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
-      iframe {
-        height: 200px;
-      }
     }
   </style>
 </head>
@@ -242,35 +221,37 @@
     </ul>
     <a class="download-resume" href="./Resume 2025.pdf" download>Download Resume</a>
   </section>
+
   <section>
     <h2>Featured Projects</h2>
+
     <div class="project">
       <h3>Advance Character Controller</h3>
       <p>Reusable state machine for advanced 3D character movement. Features root motion, top-down/3rd/1st-person, and physics interaction.</p>
       <div class="video-embed">
         <iframe src="https://www.youtube.com/embed/3dtwM_pntKc" allowfullscreen></iframe>
       </div>
-      <a href="https://aryan001021.itch.io/advance-character-controller" target="_blank">Try Game</a>
+      <a class="try-button" href="https://aryan001021.itch.io/advance-character-controller" target="_blank">Try Game</a>
     </div>
-  
+
     <div class="project">
       <h3>Procedural Skybox</h3>
       <p>Real-time day-night cycle, cylindrical projected cloud layers, moon rendering and stylized gradient blend.</p>
       <div class="video-embed">
         <iframe src="https://www.youtube.com/embed/M8VJJUeYdic" allowfullscreen></iframe>
       </div>
-      <a href="https://aryan001021.itch.io/skybox-shader" target="_blank">Try Game</a>
+      <a class="try-button" href="https://aryan001021.itch.io/skybox-shader" target="_blank">Try Game</a>
     </div>
-  
+
     <div class="project">
       <h3>World Changing Shader</h3>
       <p>Dynamic world-altering effect using stencil, displacement, and depth-aware masking with custom HLSL and URP.</p>
       <div class="video-embed">
         <iframe src="https://www.youtube.com/embed/TMGDfLCtDIo" allowfullscreen></iframe>
       </div>
-      <a href="https://aryan001021.itch.io/world-change-effect" target="_blank">Try Game</a>
+      <a class="try-button" href="https://aryan001021.itch.io/world-change-effect" target="_blank">Try Game</a>
     </div>
-  
+
     <div class="project">
       <h3>Kitchen Rush</h3>
       <p>Scriptable object driven systems and custom shaders. Includes dynamic rendering and post-processing.</p>
@@ -278,7 +259,7 @@
         <iframe src="https://www.youtube.com/embed/a6ZOTk5M47g" allowfullscreen></iframe>
       </div>
     </div>
-  
+
     <div class="project">
       <h3>2D Platformer</h3>
       <p>State machines for enemies and player, solid/OOP principles, and modular expansion system (skills, inventory, drops).</p>
@@ -286,7 +267,7 @@
         <iframe src="https://www.youtube.com/embed/U3yIVLvv4TU" allowfullscreen></iframe>
       </div>
     </div>
-  
+
     <div class="project">
       <h3>2D Dungeon Crawler</h3>
       <p>Interactive object systems, scriptable architecture, and a JSON-based save system using Unity packages.</p>
@@ -295,7 +276,7 @@
       </div>
     </div>
   </section>
-  
+
   <footer>
     <a href="mailto:aryanbhegal90@mail.com">aryanbhegal90@mail.com</a> •
     <a href="https://www.linkedin.com/in/aryan-singh-90193a24a/" target="_blank">LinkedIn</a> •
