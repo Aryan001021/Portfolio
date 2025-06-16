@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aryan – Game Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-main: #0D1117;
+      --bg-alt: #161B22;
+      --bg-tertiary: #1F2933;
+      --text-primary: #C9D1D9;
+      --text-secondary: #8B949E;
+      --accent: #58A6FF;
+      --highlight: #79C0FF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: var(--bg-alt);
+      padding: 1rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #30363D;
+    }
+
+    nav h1 {
+      margin: 0;
+      color: var(--accent);
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+    }
+
+    header {
+      padding: 4rem 2rem 3rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0 0 1rem;
+      color: var(--accent);
+    }
+
+    .roles {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .role-tag {
+      background-color: var(--bg-alt);
+      color: var(--accent);
+      border: 1px solid #30363D;
+      padding: 0.4rem 0.9rem;
+      border-radius: 1rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .role-tag:hover {
+      background-color: var(--accent);
+      color: var(--bg-main);
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: auto;
+      animation: fadeUp 1s ease;
+    }
+
+    section:nth-of-type(odd) {
+      background-color: var(--bg-alt);
+    }
+
+    section:nth-of-type(even) {
+      background-color: var(--bg-tertiary);
+    }
+
+    section h2 {
+      color: var(--highlight);
+      border-bottom: 2px solid #30363D;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .about p,
+    .skills ul {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .skills ul {
+      padding-left: 1.2rem;
+    }
+
+    .skills li {
+      margin-bottom: 1rem;
+    }
+
+    .project {
+      margin-bottom: 3rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+    }
+
+    .project h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--highlight);
+    }
+
+    .project p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .video-embed {
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .download-resume {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.2rem;
+      background-color: var(--accent);
+      color: var(--bg-main);
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-resume:hover {
+      background-color: var(--highlight);
+    }
+
+    footer {
+      padding: 3rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav h1 {
+        font-size: 1rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      iframe {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>My Portfolio</h1>
+  </nav>
+
+  <header>
+    <h1>Aryan</h1>
+    <div class="roles">
+      <span class="role-tag">Game Developer</span>
+      <span class="role-tag">Shader Artist</span>
+      <span class="role-tag">Game Systems Designer</span>
+      <span class="role-tag">Technical Optimizer</span>
+      <span class="role-tag">Generative AI Enthusiast</span>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate game developer who loves building immersive mechanics, crafting stunning visual effects through custom shaders, and designing intuitive systems that power unique game experiences. My work focuses on blending gameplay with technical artistry to deliver engaging and optimized experiences in Unity.</p>
+    <p>I also explore and apply generative AI tools like ChatGPT and Stable Diffusion to assist with world-building, dialogue writing, concept generation, and iterative prototyping — expanding creativity and productivity across development pipelines.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills & Expertise</h2>
+    <ul>
+      <li><strong>Software Design Patterns</strong> – Strong understanding of software architecture and design patterns, with the ability to apply them effectively in game development.</li>
+      <li><strong>AI & Behavior Trees</strong> – Experience designing and implementing AI behaviors using behavior trees and other AI techniques.</li>
+      <li><strong>Unity & C# Development</strong> – Skilled in Unity game development, C# scripting and game mechanics implementation.</li>
+      <li><strong>2D Game Development</strong> – Proficient in creating polished and scalable 2D games.</li>
+      <li><strong>Independent & Team-Oriented Work Ethic</strong> – Self-motivated with a strong work ethic, capable of working independently and collaborating within a team.</li>
+      <li><strong>Generative AI in Games</strong> – Practical use of tools like ChatGPT and Stable Diffusion for assisting design, content, and visual development.</li>
+    </ul>
+    <a class="download-resume" href="/path-to-your-resume.pdf" download>Download Resume</a>
+  </section>
+  <section>
+    <h2>Featured Projects</h2>
+    <div class="project">
+      <h3>Advance Character Controller</h3>
+      <p>Reusable state machine for advanced 3D character movement. Features root motion, top-down/3rd/1st-person, and physics interaction.</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/3dtwM_pntKc" allowfullscreen></iframe>
+      </div>
+      <a href="https://aryan001021.itch.io/advance-character-controller" target="_blank">Try Game</a>
+    </div>
+  
+    <div class="project">
+      <h3>Procedural Skybox</h3>
+      <p>Real-time day-night cycle, cylindrical projected cloud layers, moon rendering and stylized gradient blend.</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/M8VJJUeYdic" allowfullscreen></iframe>
+      </div>
+      <a href="https://aryan001021.itch.io/skybox-shader" target="_blank">Try Game</a>
+    </div>
+  
+    <div class="project">
+      <h3>World Changing Shader</h3>
+      <p>Dynamic world-altering effect using stencil, displacement, and depth-aware masking with custom HLSL and URP.</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/TMGDfLCtDIo" allowfullscreen></iframe>
+      </div>
+      <a href="https://aryan001021.itch.io/world-change-effect" target="_blank">Try Game</a>
+    </div>
+  
+    <div class="project">
+      <h3>Kitchen Rush</h3>
+      <p>Scriptable object driven systems and custom shaders. Includes dynamic rendering and post-processing.</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/a6ZOTk5M47g" allowfullscreen></iframe>
+      </div>
+    </div>
+  
+    <div class="project">
+      <h3>2D Platformer</h3>
+      <p>State machines for enemies and player, solid/OOP principles, and modular expansion system (skills, inventory, drops).</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/U3yIVLvv4TU" allowfullscreen></iframe>
+      </div>
+    </div>
+  
+    <div class="project">
+      <h3>2D Dungeon Crawler</h3>
+      <p>Interactive object systems, scriptable architecture, and a JSON-based save system using Unity packages.</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/1WoLhLCL8E0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <a href="mailto:aryanbhegal90@mail.com">aryanbhegal90@mail.com</a> •
+    <a href="https://www.linkedin.com/in/aryan-singh-90193a24a/" target="_blank">LinkedIn</a> •
+    <a href="https://github.com/Aryan001021/" target="_blank">GitHub</a> •
+    <a href="https://youtube.com/playlist?list=PLomX_KPKlf1rGFvfTVVhuEoPYg-iWzCqq&si=RK7__zmUklGKY5vC" target="_blank">YouTube Playlist</a>
+  </footer>
+</body>
+</html>
