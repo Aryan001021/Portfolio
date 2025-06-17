@@ -63,19 +63,19 @@
     }
 
     .role-tag {
-      background-color: var(--bg-alt);
-      color: var(--accent);
-      border: 1px solid #30363D;
-      padding: 0.4rem 0.9rem;
-      border-radius: 1rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-      transition: all 0.3s ease;
+    background-color: var(--bg-alt);
+    color: var(--accent);
+    border: 1px solid #30363D;
+    padding: 0.4rem 0.9rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    pointer-events: none; 
     }
 
     .role-tag:hover {
-      background-color: var(--accent);
-      color: var(--bg-main);
+    background-color: var(--bg-alt); 
+    color: var(--accent);
     }
 
     section {
@@ -222,60 +222,65 @@
     <a class="download-resume" href="./Resume 2025.pdf" download>Download Resume</a>
   </section>
 
-  <section>
-    <h2>Featured Projects</h2>
 
-    <div class="project">
-      <h3>Advance Character Controller</h3>
-      <p>Reusable state machine for advanced 3D character movement. Features root motion, top-down/3rd/1st-person, and physics interaction.</p>
-      <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/3dtwM_pntKc" allowfullscreen></iframe>
-      </div>
-      <a class="try-button" href="https://aryan001021.itch.io/advance-character-controller" target="_blank">Try Game</a>
-    </div>
+<section>
+  <h2>Featured Projects – Game Samples</h2>
 
-    <div class="project">
-      <h3>Procedural Skybox</h3>
-      <p>Real-time day-night cycle, cylindrical projected cloud layers, moon rendering and stylized gradient blend.</p>
-      <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/M8VJJUeYdic" allowfullscreen></iframe>
-      </div>
-      <a class="try-button" href="https://aryan001021.itch.io/skybox-shader" target="_blank">Try Game</a>
+  
+  <div class="project">
+    <h3>2D Platformer</h3>
+    <p>State machines for enemies and player, solid/OOP principles, and modular expansion system (skills, inventory, drops).</p>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/U3yIVLvv4TU" allowfullscreen></iframe>
     </div>
+  </div>
+ 
+  <div class="project">
+    <h3>Kitchen Rush</h3>
+    <p>Scriptable object driven systems and custom shaders. Includes dynamic rendering and post-processing.</p>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/a6ZOTk5M47g" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <div class="project">
+    <h3>2D Dungeon Crawler</h3>
+    <p>Interactive object systems, scriptable architecture, and a JSON-based save system using Unity packages.</p>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/1WoLhLCL8E0" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+<section>
+  <h2>Featured Projects – Core Systems</h2>
 
-    <div class="project">
-      <h3>World Changing Shader</h3>
-      <p>Dynamic world-altering effect using stencil, displacement, and depth-aware masking with custom HLSL and URP.</p>
-      <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/TMGDfLCtDIo" allowfullscreen></iframe>
-      </div>
-      <a class="try-button" href="https://aryan001021.itch.io/world-change-effect" target="_blank">Try Game</a>
+  <div class="project">
+    <h3>Advance Character Controller</h3>
+    <p>Reusable state machine for advanced 3D character movement. Features root motion, top-down/3rd/1st-person, and physics interaction.</p>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/3dtwM_pntKc" allowfullscreen></iframe>
     </div>
+    <a class="try-button" href="https://aryan001021.itch.io/advance-character-controller" target="_blank">Try Game</a>
+  </div>
 
-    <div class="project">
-      <h3>Kitchen Rush</h3>
-      <p>Scriptable object driven systems and custom shaders. Includes dynamic rendering and post-processing.</p>
-      <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/a6ZOTk5M47g" allowfullscreen></iframe>
-      </div>
+  <div class="project">
+    <h3>Procedural Skybox</h3>
+    <p>Real-time day-night cycle, cylindrical projected cloud layers, moon rendering and stylized gradient blend.</p>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/M8VJJUeYdic" allowfullscreen></iframe>
     </div>
+    <a class="try-button" href="https://aryan001021.itch.io/skybox-shader" target="_blank">Try Game</a>
+  </div>
 
-    <div class="project">
-      <h3>2D Platformer</h3>
-      <p>State machines for enemies and player, solid/OOP principles, and modular expansion system (skills, inventory, drops).</p>
-      <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/U3yIVLvv4TU" allowfullscreen></iframe>
-      </div>
+  <div class="project">
+    <h3>World Changing Shader</h3>
+    <p>Dynamic world-altering effect using stencil, displacement, and depth-aware masking with custom HLSL and URP.</p>
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/TMGDfLCtDIo" allowfullscreen></iframe>
     </div>
-
-    <div class="project">
-      <h3>2D Dungeon Crawler</h3>
-      <p>Interactive object systems, scriptable architecture, and a JSON-based save system using Unity packages.</p>
-      <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/1WoLhLCL8E0" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
+    <a class="try-button" href="https://aryan001021.itch.io/world-change-effect" target="_blank">Try Game</a>
+  </div>
+</section>
 
   <footer>
     <a href="mailto:aryanbhegal90@mail.com">aryanbhegal90@mail.com</a> •
